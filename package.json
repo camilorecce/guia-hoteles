@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://camilorecce@bitbucket.org/camilorecce/guia-hoteles.git"
+  },
+  "author": "Camilo Recce",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/camilorecce/guia-hoteles#readme"
+}
