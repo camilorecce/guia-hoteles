@@ -1,0 +1,20 @@
+.jumbotron {
+    background-color: gold;
+    color: black;
+}
+
+.card-hotel {
+    flex: 1 150px;
+    font-size: small;
+    padding: 0px 10px 10px 10px;
+}
+
+.card-hotel .btn {
+    width: 100%;
+}
+
+footer {
+    background-color: gold;
+    padding: 10px 10px 0px 10px;
+    margin-top: 20px;
+}

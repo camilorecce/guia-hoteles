@@ -1,98 +1,160 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <title>Guía de Hoteles</title>
+</head>
 
-    <div class="jumbotron">
-      <h1 class="display-3"> Guía de hoteles </h1>
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <div class="jumbotron">
+    <h1 class="display-3"> Guía de hoteles </h1>
+  </div>
+
+  <div class="container">
+
+    <div class="d-flex">
+      <div class="col-sm-4">
+        <h4> Destinos más visitados </h4>
+        <p>
+          Conocé y ubica las regiones más visitadas y los puntos de interés más populares.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4> Hoteles recomendados </h4>
+        <p>
+          Obtené información de los hoteles más buscados y reservá con solo un click.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h4> Servicios varios </h4>
+        <p>
+          Atracciones, restaurantes, alquiler de autos y otros servicios generales.
+        </p>
+      </div>
     </div>
 
-    <div class="container">
-        
-      <div class="row my-4 justify-content-around">
-        <div class="col-3">
-          <h4> Destinos más visitados </h4>
-          <p>
-            Conocé y ubica las regiones más visitadas y los puntos de interés más populares.
-          </p>
+    <div class="d-flex flex-wrap">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel Buenos Aires</h6>
+          <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.
+            Ut enim ad minim veniam, ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in cillum dolore eu fugiat nulla pariatur.</p>
         </div>
-        <div class="col-3">
-          <h4> Hoteles recomendados </h4>
-          <p>
-            Obtené información de los hoteles más buscados y reservá con solo un click.
-          </p>
-        </div>
-        <div class="col-3">
-          <h4> Servicios varios </h4>
-          <p>
-            Atracciones, restaurantes, alquiler de autos y otros servicios generales.
-          </p>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
         </div>
       </div>
-      
-      <ul class="list-group">
 
-        <li class="list-group-item">
-          <div class="row my-3">
-            <div class="col">
-              <h6>Hotel 1</h6>
-              <div class="row justify-content-between">
-                <div class="col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <div class="col-1"><button class="btn btn-outline-dark">Go</button></div>
-              </div>
-            </div>
-          </div>
-        </li>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel Santiago de Chile</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
+        </div>
+      </div>
 
-        <li class="list-group-item">
-          <div class="row my-3">
-            <div class="col">
-              <h6>Hotel 2</h6>
-              <div class="row justify-content-between">
-                <div class="col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <div class="col-1"><button class="btn btn-outline-dark">Go</button></div>
-              </div>
-            </div>
-          </div>
-        </li>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel Rio de Janeiro</h6>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
+        </div>
+      </div>
 
-        <li class="list-group-item">
-          <div class="row my-3">
-            <div class="col">
-              <h6>Hotel 3</h6>
-              <div class="row justify-content-between">
-                <div class="col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <div class="col-1"><button class="btn btn-outline-dark">Go</button></div>
-              </div>
-            </div>
-          </div>    
-        </li>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel Lima</h6>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
+        </div>
+      </div>
 
-      </ul>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel Brasilia</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed labore et dolore magna aliqua.
+            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel La Paz</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
+        </div>
+      </div>
+
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h6>Hotel Bariloche</h6>
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary">Go</button>
+        </div>
+      </div>
 
     </div>
-    
-    </body>
-    
-    </html>
+
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-3 d-flex flex-column">
+        <a href="http://www.facebook.com">Facebook</a>
+        <a href="http://www.instagram.com">Instagram</a>
+        <a href="http://www.twitter.com">Twitter</a>
+      </div>
+      <div class="col-sm-5">
+        <address>
+          <h6>Oficina central</h6>
+          <p>Calle 52 258, La Plata, Buenos Aires, Argentina</p>
+          <p>+5492215999999</p>
+          <p>contacto@guiahoteles.com</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="#">Nosotros</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
