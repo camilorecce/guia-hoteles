@@ -30,3 +30,7 @@ footer {
 .oi-chevron-right {
     margin-left: 15px;
 }
+
+.table-star-column {
+    width: 120px;
+}
