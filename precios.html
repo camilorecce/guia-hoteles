@@ -53,7 +53,7 @@
       </ol>
     </nav>
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="compare-tab" data-toggle="tab" href="#compare" role="tab" aria-controls="compare"
           aria-selected="true">Comparar</a>
@@ -120,18 +120,72 @@
           </table>
         </div>
       </div>
+
       <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-        <div class="d-flex justify-content-center">
-          <div class="card border-primary" style="width: 16rem;">
-            <div class="card-header text-primary"><b>Tarjetas aceptadas</b></div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tarjeta básica</li>
-              <li class="list-group-item">Tarjeta VIP</li>
-              <li class="list-group-item">Tarjeta Gold</li>
-              <li class="list-group-item">Tarjeta Black</li>
-            </ul>
+
+        <div class="accordion" id="accordionTarjetas">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h6>
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseBasica"
+                  aria-expanded="false" aria-controls="collapseBasica">
+                  Tarjeta básica
+                </button>
+              </h6>
+            </div>
+            <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Reservas hasta en 3 cuotas sin interés
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h6>
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseVIP"
+                  aria-expanded="false" aria-controls="collapseVIP">
+                  Tarjeta VIP
+                </button>
+              </h6>
+            </div>
+            <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Reservas hasta en 6 cuotas sin interés
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h6>
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseGold"
+                  aria-expanded="false" aria-controls="collapseGold">
+                  Tarjeta Gold
+                </button>
+              </h6>
+            </div>
+            <div id="collapseGold" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Reservas hasta en 12 cuotas sin interés. Beneficios en traslados y obsequio de bienvenida.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h6>
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseBlack"
+                  aria-expanded="false" aria-controls="collapseBlack">
+                  Tarjeta Black
+                </button>
+              </h6>
+            </div>
+            <div id="collapseBlack" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Reservas hasta en 24 cuotas sin interés. Beneficios en traslados y excursiones. Room service gratis.
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
       <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
         <p>Comentarios</p>
