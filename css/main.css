@@ -32,6 +32,6 @@ footer {
     width: 120px;
 }
 
-@include media-breakpoint-down(md) { 
-    column-count: 2;
- }
+.oi-chat {
+    margin-left: 5px;
+}

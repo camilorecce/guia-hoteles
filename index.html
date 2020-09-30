@@ -108,6 +108,7 @@
           <p class="card-text">Lorem ipsum dolor sit amet, labore et dolore magna aliqua.
             Ut enim ad minim veniam, ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
         </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
@@ -123,7 +124,8 @@
             ut labore et
             dolore magna aliqua.
             Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
+          </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
         </div>
@@ -136,6 +138,7 @@
           <h6 class="card-subtitle text-muted">Brasil</h6>
           <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur.</p>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
         </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
@@ -150,7 +153,8 @@
           <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
+          </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
         </div>
@@ -165,7 +169,8 @@
             aliqua.
             Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-        </div>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
+          </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
         </div>
@@ -179,7 +184,8 @@
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et
             dolore magna aliqua.</p>
-        </div>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
+          </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
         </div>
@@ -192,7 +198,8 @@
           <h6 class="card-subtitle text-muted">Argentina</h6>
           <p class="card-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto">Contacto<span class="oi oi-chat"></span></button>
+          </div>
         <div>
           <button class="btn btn-outline-primary">Go<span class="oi oi-chevron-right"></span></button>
         </div>
@@ -225,6 +232,34 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="contacto" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contacto con el hotel</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Tu email: </label>
+              <input type="text" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message" class="col-form-label">Dejá tu mensaje: </label>
+              <textarea type="text" class="form-control" id="message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" type="button">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
