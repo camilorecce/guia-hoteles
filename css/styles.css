@@ -1,0 +1,36 @@
+.jumbotron {
+  background-color: #e3d430;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 2rem; }
+
+.card-hotel {
+  font-size: medium;
+  margin-top: 10px;
+  margin-bottom: 0.75rem; }
+
+.card-hotel .btn {
+  width: 100%; }
+
+footer {
+  background-color: #e3d430;
+  font-size: small;
+  padding: 10px 10px 0px 10px;
+  margin-top: 20px;
+  margin-bottom: 0px; }
+
+.footer-address-icon {
+  padding-right: 10px; }
+
+.oi-chevron-right {
+  margin-left: 15px; }
+
+.table-star-column {
+  width: 120px; }
+
+.oi-chat {
+  margin-left: 5px; }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-columns {
+    column-count: 2; } }

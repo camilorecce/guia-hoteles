@@ -1,0 +1,56 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$yellow: #e3d430;
+$green: #26ad2f;
+$red: #cc0818;
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron {
+    background-color: $yellow;
+    color: black;
+    @include margenes(50px, 2rem)
+}
+
+.card-hotel {
+    font-size: medium;
+    @include margenes(10px, .75rem)
+}
+
+.card-hotel .btn {
+    width: 100%;
+}
+
+footer {
+    background-color: $yellow;
+    font-size: small;
+    padding: 10px 10px 0px 10px;
+    @include margenes(20px, 0px)
+}
+
+.footer-address-icon {
+    padding-right: 10px;
+}
+
+.oi-chevron-right {
+    margin-left: 15px;
+}
+
+.table-star-column {
+    width: 120px;
+}
+
+.oi-chat {
+    margin-left: 5px;
+}
+
+.card-columns {
+    @include media-breakpoint-only(sm) {
+      column-count: 2;
+    }
+}
