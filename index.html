@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <!-- build:css dist/index.css -->
+  <!-- build:css css/index.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-<!-- endbuild -->
+  <!-- endbuild -->
+  
   <title>Guía de Hoteles</title>
 </head>
 
@@ -19,42 +20,11 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- build:js dist/index.js -->
+  <!-- build:js js/main.js -->
   <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js" crossorigin="anonymous"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-      $('.carousel').carousel({
-        interval: 3000
-      });
-
-      $('#contacto').on('show.bs.modal', function(n) {
-        console.log("El modal se esta mostrando");
-
-        $('#contactoBsAs').removeClass("btn-outline-success");
-        $('#contactoBsAs').addClass("btn-info");
-        $('#contactoBsAs').prop('disabled', true);
-      })
-
-      $('#contacto').on('shown.bs.modal', function(n) {
-        console.log("El modal se mostro");
-      })
-
-      $('#contacto').on('hide.bs.modal', function(n) {
-        console.log("El modal se está ocultando");
-      })
-
-      $('#contacto').on('hidden.bs.modal', function(n) {
-        console.log("El modal se ocultó");
-
-        $('#contactoBsAs').removeClass("btn-info");
-        $('#contactoBsAs').addClass("btn-outline-success");
-        $('#contactoBsAs').prop('disabled', false);
-      })
-    })
-  </script>
+  <script src="js/index.js"></script>
   <!-- endbuild -->
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" aria-label="sitemenu">
@@ -168,8 +138,8 @@
           <p class="card-text">Lorem ipsum dolor sit amet, labore et dolore magna aliqua.
             Ut enim ad minim veniam, ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in cillum dolore eu fugiat nulla pariatur.</p>
-          <button class="btn btn-outline-success" type="button" data-toggle="modal"
-            data-target="#contacto" id="contactoBsAs">Contacto<span class="oi oi-chat"></span></button>
+          <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto"
+            id="contactoBsAs">Contacto<span class="oi oi-chat"></span></button>
         </div>
         <div>
           <button class="btn btn-outline-primary" data-toggle="tooltip" data-placement="bottom"
